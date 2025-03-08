@@ -1,0 +1,120 @@
+body {
+    font-family: 'Cinzel', serif; /* Fonte mais gótica */
+    background-color: #f0f0f0; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    padding-top: 150px;
+}
+
+body.modo-escuro {
+    background-color: #333; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+}
+
+h3, h4 {
+    color: #8b0000; /* Cor similar ao vermelho da ficha */
+    text-align: center;
+}
+
+.form-range {
+    width: 100%;
+    margin-bottom: 10px;
+    accent-color: #8b0000; /* Cor de destaque para a barra */
+}
+
+.form-label {
+    font-weight: bold; /* Negrito nas labels */
+}
+
+/* Estilo para exibição dos valores dos atributos */
+.attribute-value {
+    font-size: 1.2em; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #8b0000; /* Cor */
+}
+
+/* Adiciona um estilo para as Habilidades */
+h4 {
+    border-bottom: 2px solid #8b0000; /* Linha inferior para as habilidades */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+}
+
+
+
+/* Estilo do título */
+h1 {
+    color: #8b0000;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+#lua {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+
+#botaoAlteraTema {
+    width: 200px;
+    height: 50px;
+    background-color: #8b0000;
+    color: white;
+    border: solid #d00000 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botaoAlteraTema i {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+#botaoAlteraTema:hover {
+    background-color: #d00000;
+}
+
+header {
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    width: 100%; /* Largura de 100% */
+    background-color: #f0f0f0; /* Fundo claro */
+    color: white; /* Cor do texto */
+    z-index: 1000; /* Garante que o cabeçalho ficará acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header.modo-escuro {
+    background-color: #333; /* Fundo escuro */
+    color: #f0f0f0; /* Texto claro */
+}
+  
+/* Linha divisória embaixo do header */
+header::after {
+    content: ""; /* Cria o pseudo-elemento */
+    display: block; /* Faz com que o pseudo-elemento ocupe toda a largura */
+    height: 2px; /* Altura da linha */
+    background-color: #000; /* Cor da linha */
+    margin-top: 10px; /* Espaço entre o conteúdo e a linha */
+}
+
+header.modo-escuro::after {
+    background-color: #FFF; /* Cor da linha */
+}
+
+h1.modo-escuro, h3.modo-escuro, h4.modo-escuro, .form-range.modo-escuro, .attribute-value.modo-escuro {
+    color: #d00000;
+}
+
+main {
+    margin-top: 70px;
+}
+
+footer {
+    margin-bottom: 100px;
+}
